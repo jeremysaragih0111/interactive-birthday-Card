@@ -1,0 +1,65 @@
+﻿# ============================================
+# Interactive Birthday Card — .gitignore
+# ============================================
+
+# ---- OS files ----
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ---- Editor / IDE ----
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+
+# ---- Node.js (jika pakai npm/npx serve) ----
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ---- Python (jika pakai python -m http.server) ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# ---- Build & cache ----
+dist/
+build/
+.cache/
+.parcel-cache/
+.temp/
+tmp/
+
+# ---- Env & secrets ----
+.env
+.env.*
+!.env.example
+
+# ---- Audio besar (opsional) ----
+# assets/audio/*.mp3
+# assets/audio/*.wav
+
+# ---- Log & test ----
+*.log
+coverage/
+.nyc_output/
+
+# ---- Misc ----
+*.bak
+*.orig
