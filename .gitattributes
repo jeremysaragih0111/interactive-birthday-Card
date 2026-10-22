@@ -1,2 +1,42 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+﻿# ============================================
+# Interactive Birthday Card — .gitattributes
+# ============================================
+
+* text=auto eol=lf
+
+*.html   text eol=lf
+*.css    text eol=lf
+*.js     text eol=lf
+*.json   text eol=lf
+*.md     text eol=lf
+*.txt    text eol=lf
+*.yml    text eol=lf
+*.yaml   text eol=lf
+*.gitignore      text eol=lf
+*.gitattributes  text eol=lf
+
+*.bat    text eol=crlf
+*.cmd    text eol=crlf
+*.ps1    text eol=crlf
+
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.webp   binary
+*.ico    binary
+*.svg    text eol=lf
+*.mp3    binary
+*.wav    binary
+*.ogg    binary
+*.m4a    binary
+*.mp4    binary
+*.woff   binary
+*.woff2  binary
+*.ttf    binary
+*.otf    binary
+
+*.html   linguist-documentation=false
+*.css    linguist-documentation=false
+*.js     linguist-vendored=false
+assets/* linguist-vendored=true
