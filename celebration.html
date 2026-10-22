@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Celebration — Birthday Universe</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body data-page="celebration">
+  <div class="bg-layer" aria-hidden="true">
+    <div class="bg-gradient"></div>
+    <div class="bg-particles" id="particles"></div>
+    <div class="bg-stars" id="stars"></div>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Birthday Universe home">
+      <span class="brand-mark" aria-hidden="true">✦</span>
+      <span class="brand-text">Birthday&nbsp;Universe</span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html" class="nav-link" data-nav="home">Home</a>
+      <a href="letter.html" class="nav-link" data-nav="letter">Letter</a>
+      <a href="celebration.html" class="nav-link" data-nav="celebration">Celebration</a>
+      <a href="create.html" class="nav-link" data-nav="create">Create</a>
+    </nav>
+    <div class="audio-controls" id="audio-controls"></div>
+  </header>
+
+  <main class="page-main">
+    <section class="celebration-section" aria-labelledby="celebration-title">
+      <h1 id="celebration-title" class="section-title">Make a Wish!</h1>
+      <p class="section-subtitle" id="celebration-sub">Click the candles to blow them out.</p>
+
+      <div class="cake-stage">
+        <div class="cake" id="cake" aria-hidden="true">
+          <div class="cake-layer cake-bottom"></div>
+          <div class="cake-layer cake-middle"></div>
+          <div class="cake-layer cake-top"></div>
+          <div class="cake-candles" id="candles"></div>
+        </div>
+      </div>
+
+      <div class="celebration-actions">
+        <button class="btn btn-primary" id="blow-all" type="button">Blow Out All Candles</button>
+        <button class="btn btn-ghost" id="relight" type="button">Relight Candles</button>
+      </div>
+      <p class="live-region" id="wish-status" aria-live="polite"></p>
+      <div class="wish-message glass" id="wish-message" hidden>
+        <h2>Your wish has been sent to the stars ✨</h2>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Made with ✨ for someone special.</p>
+  </footer>
+
+  <script src="js/effects.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/birthday-card.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
