@@ -1,0 +1,52 @@
+@media (max-width: 900px) {
+  .create-layout { grid-template-columns: 1fr; }
+  .preview-pane { position: static; }
+}
+
+@media (max-width: 720px) {
+  .site-header {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .main-nav {
+    order: 3;
+    width: 100%;
+    margin-left: 0;
+    justify-content: space-between;
+    overflow-x: auto;
+    padding-bottom: 0.25rem;
+    -webkit-overflow-scrolling: touch;
+  }
+  .nav-link { padding: 0.45rem 0.7rem; font-size: 0.85rem; white-space: nowrap; }
+  .audio-controls { margin-left: auto; }
+  .audio-status { display: none; }
+
+  .hero { padding-top: 1rem; }
+  .hero-title { font-size: clamp(2rem, 10vw, 2.8rem); }
+
+  .feature-grid { grid-template-columns: 1fr 1fr; }
+
+  .cake { height: 220px; width: 260px; }
+  .cake-candles { bottom: 128px; gap: 10px; }
+  .candle { height: 38px; width: 9px; }
+
+  .envelope { width: min(300px, 88vw); height: min(200px, 62vw); }
+}
+
+@media (max-width: 420px) {
+  .feature-grid { grid-template-columns: 1fr; }
+  .brand-text { display: none; }
+  .hero-actions .btn, .letter-actions .btn, .celebration-actions .btn { width: 100%; }
+}
+
+/* Touch devices: disable pointer-tilt, keep click interactions */
+@media (hover: none) {
+  .tilt { transform: none !important; }
+}
+
+/* Backdrop-filter fallback */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .glass, .site-header, .preview-card-inner {
+    background: rgba(30, 18, 60, 0.92);
+  }
+}
